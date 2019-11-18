@@ -6,7 +6,7 @@ class Course1 {
 	private int duration;
 	private double cost;
 
-	public static String instituteName = "Sunshine";
+	public static String INSTITUTE = "Sunshine";
 	
 	//default constructor
 	Course1(){
@@ -30,7 +30,7 @@ class Course1 {
 		System.out.println("Name= " + name);
 		System.out.println("Duration= " + duration);
 		System.out.println("Cost= " + cost);
-		System.out.println("Institute=" + Course.instituteName + "\n");
+		System.out.println("Institute=" + Course1.INSTITUTE+ "\n");
 	}
 }
 
