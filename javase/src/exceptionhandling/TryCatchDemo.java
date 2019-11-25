@@ -15,13 +15,20 @@ public class TryCatchDemo {
 			int div = a / b;
 			System.out.println("Result: " + div);
 			
+			String s1="hello";//"20"
+			int n= Integer.parseInt(s1);
+			
 			String name=null;
 			System.out.println(name.length());
+			
 		} catch (ArithmeticException ae) {
 			System.out.println("Divison by zero is not defined in java");
-		}catch(NullPointerException ne)
-		{
+		}catch(NullPointerException ne)		{
 			System.out.println("String is not assinged any value");
+		}
+		catch(Exception e ) {
+			e.printStackTrace();
+//			System.out.println(e.getMessage());
 		}
 		System.out.println("End");
 	}
