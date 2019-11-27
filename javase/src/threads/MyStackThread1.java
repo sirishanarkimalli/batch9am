@@ -12,9 +12,9 @@ public class MyStackThread1 implements Runnable {
 	}
 
 	public void run() {
-//		synchronized(stackObj){
+		synchronized(stackObj){
 		stackObj.push(10);
-//		}
+		}
 	}
 
 	public static void main(String[] args) {
